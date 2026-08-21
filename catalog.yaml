@@ -1,0 +1,29 @@
+catalog_id: ghfht9135k3m9p7
+owner: Northwind Labs
+description: Internal dataset provenance registry for Northwind Labs analytics
+datasets:
+  - id: SRC-SST2
+    name: Stanford Sentiment Treebank v2
+    type: source
+  - id: SRC-IMDB
+    name: IMDB Large Movie Review
+    type: source
+  - id: SRC-TWEET
+    name: TweetEval Benchmark
+    type: source
+  - id: DRV-SENTIMENT
+    name: Sentiment Signals
+    type: derived
+    derived_from: [SRC-SST2]
+  - id: DRV-REVIEWS
+    name: Review Summaries
+    type: derived
+    derived_from: [SRC-IMDB]
+  - id: DRV-SOCIAL
+    name: Social Signals
+    type: derived
+    derived_from: [SRC-TWEET]
+  - id: DRV-FULL
+    name: Unified Signals
+    type: derived
+    derived_from: [SRC-SST2, SRC-TWEET]
