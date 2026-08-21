@@ -9,7 +9,7 @@ This registry tracks the lineage of Northwind Labs internal analytics datasets. 
 | SRC-SST2 | source | — |
 | SRC-IMDB | source | — |
 | SRC-TWEET | source | — |
-| DRV-SENTIMENT | derived | [stanfordnlp/sst2](https://huggingface.co/datasets/stanfordnlp/sst2) |
-| DRV-REVIEWS | derived | [stanfordnlp/imdb](https://huggingface.co/datasets/stanfordnlp/imdb) |
-| DRV-SOCIAL | derived | [cardiffnlp/tweet_eval](https://huggingface.co/datasets/cardiffnlp/tweet_eval) |
+| DRV-SENTIMENT | derived | SRC-SST2 |
+| DRV-REVIEWS | derived | SRC-IMDB |
+| DRV-SOCIAL | derived | SRC-TWEET |
 | DRV-FULL | derived | [stanfordnlp/sst2](https://huggingface.co/datasets/stanfordnlp/sst2), [cardiffnlp/tweet_eval](https://huggingface.co/datasets/cardiffnlp/tweet_eval) |
